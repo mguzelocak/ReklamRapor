@@ -1,4 +1,8 @@
 import requests
+import FacebookAdsApi
+import os
+from dotenv import load_dotenv
+from agents import Agent, Runner
 
 """
 📄 basic.py — Agent Entry Point
@@ -13,11 +17,6 @@ The product data comes from a MySQL database and is accessed through a token-saf
 
 Author: @mguzelocak
 """
-
-from agents import Agent, Runner
-from dotenv import load_dotenv
-
-# 🔐 Load environment variables from .env file
 load_dotenv()
 
 # 🛍️ Beyorganik product recommendation agent
